@@ -21,7 +21,7 @@ export default function App() {
   return (
     <>
       {error ? (
-        <p>Error fetching data</p>
+        <p className="errorState">Error fetching data</p>
       ) : (
         <div className="h-[80vh] w-[80vw] flex items-center justify-center main">
           <div className="flex flex-col justify-center m-0 items-center">
