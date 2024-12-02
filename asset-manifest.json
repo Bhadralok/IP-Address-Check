@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/IP-Address-Check/static/css/main.950251c1.css",
+    "main.js": "/IP-Address-Check/static/js/main.02628615.js",
+    "static/media/background.png": "/IP-Address-Check/static/media/background.0979f2013f863e871c99.png",
+    "index.html": "/IP-Address-Check/index.html",
+    "main.950251c1.css.map": "/IP-Address-Check/static/css/main.950251c1.css.map",
+    "main.02628615.js.map": "/IP-Address-Check/static/js/main.02628615.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.950251c1.css",
+    "static/js/main.02628615.js"
+  ]
+}
