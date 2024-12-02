@@ -3,7 +3,7 @@ export default function App() {
   const [ipaddress, setIpaddress] = useState(null);
   const [error, setError] = useState(null);
   const url = "https://api.aruljohn.com/ip/json";
-  async function getMovie() {
+  async function getLocation() {
     try {
       const res = await fetch(url);
       if (!res.ok) {
@@ -15,8 +15,9 @@ export default function App() {
       setError(`Error : ${error.message}`);
     }
   }
+  const anything = "something";
   useEffect(() => {
-    getMovie();
+    getLocation();
   }, []);
   const handleReload = () => {
     window.location.reload();
@@ -40,6 +41,7 @@ export default function App() {
             <h2 className="ipaddress py-[0.7rem] px-[2rem]  font-bold text-white text-base sm:text-xl md:text-xl lg:text-5xl flex justify-center items-center rounded-full bg-black">
               {ipaddress}
             </h2>
+            <h1>{anything}</h1>
           </div>
         </div>
       )}
