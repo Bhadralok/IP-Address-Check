@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 export default function App() {
   const [ipaddress, setIpaddress] = useState(null);
   const [error, setError] = useState(null);
-  const url = "https://api.aruljohn.com/ip/json";
+  const url = "https://api.arujohn.com/ip/json";
   async function getMovie() {
     try {
       const res = await fetch(url);
@@ -18,10 +18,21 @@ export default function App() {
   useEffect(() => {
     getMovie();
   }, []);
+  const handleReload = () => {
+    window.location.reload();
+  };
   return (
     <>
       {error ? (
-        <p className="errorState">Error fetching data</p>
+        <p className="errorState text-white text-4xl">
+          There seem to be a Problem, Please 
+          <em
+            onClick={handleReload}
+            className="text-blue-500 underline not-italic"
+          >
+            reload
+          </em>
+        </p>
       ) : (
         <div className="h-[80vh] w-[80vw] flex items-center justify-center main">
           <div className="flex flex-col justify-center m-0 items-center">
