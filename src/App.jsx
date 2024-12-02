@@ -41,7 +41,6 @@ export default function App() {
             <h2 className="ipaddress py-[0.7rem] px-[2rem]  font-bold text-white text-base sm:text-xl md:text-xl lg:text-5xl flex justify-center items-center rounded-full bg-black">
               {ipaddress}
             </h2>
-            <h1>{anything}</h1>
           </div>
         </div>
       )}
