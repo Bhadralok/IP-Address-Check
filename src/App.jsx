@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 export default function App() {
   const [ipaddress, setIpaddress] = useState(null);
   const [error, setError] = useState(null);
-  const url = "https://api.arujohn.com/ip/json";
+  const url = "https://api.aruljohn.com/ip/json";
   async function getMovie() {
     try {
       const res = await fetch(url);
